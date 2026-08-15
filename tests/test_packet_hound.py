@@ -1,6 +1,10 @@
-"""Comprehensive Automated Unit Test Suite for packet-hound."""
-
 import struct
+import sys
+from pathlib import Path
+
+# Ensure root is in sys.path for Linux CI / Pytest
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 import pytest
 from src.detectors.arp_spoof import ARPSpoofDetector
 from src.detectors.dns_tunnel import DNSTunnelDetector

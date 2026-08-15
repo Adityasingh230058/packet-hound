@@ -27,7 +27,9 @@ jobs:
         pip install -r requirements.txt
 
     - name: Run Test Suite & Generate Sample PCAP
+      env:
+        PYTHONPATH: .
       run: |
         python samples/generate_sample_pcap.py
-        pytest -v tests/
+        python -m pytest -v tests/
         python src/main.py --pcap samples/network_traffic.pcap
