@@ -1,0 +1,28 @@
+name: Bug Report
+description: Report an issue or dissection parsing error in packet-hound
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve packet-hound!
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: What packet protocol or flow reconstruction failed?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Command run or sample PCAP file format.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment Info
+      placeholder: OS (Linux/Windows/macOS), Python 3.11
+    validations:
+      required: false

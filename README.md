@@ -1,9 +1,10 @@
 # 🐶 packet-hound — High-Performance Network Packet Dissector & Threat Detector
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Python: 3.9+](https://img.shields.io/badge/Python-3.9%2B-brightgreen.svg)](https://www.python.org/)
-[![Tests: 12 Passed](https://img.shields.io/badge/Tests-12%20Passed%20(100%25)-success.svg)](tests/)
-[![Build: Passing](https://img.shields.io/badge/CI-GitHub%20Actions%20Passing-success.svg)](.github/workflows/ci.yml)
+[![CI](https://github.com/Adityasingh230058/packet-hound/actions/workflows/ci.yml/badge.svg)](https://github.com/Adityasingh230058/packet-hound/actions/workflows/ci.yml)
+[![Python Version](https://img.shields.io/badge/Python-3.9%20|%203.10%20|%203.11%20|%203.12-brightgreen.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Tests](https://img.shields.io/badge/Tests-12%20Passed%20(100%25)-success.svg)](tests/)
+[![Code Style](https://img.shields.io/badge/Code%20Style-Black-000000.svg)](https://github.com/psf/black)
 
 A pure-Python, zero-dependency network packet dissector, 5-tuple flow reconstructor, and network anomaly detection engine.
 
@@ -11,7 +12,7 @@ A pure-Python, zero-dependency network packet dissector, 5-tuple flow reconstruc
 
 ## 📌 Project Overview
 
-I built `packet-hound` from scratch to dissect raw network frames (Ethernet II, 802.1Q VLAN, ARP, IPv4/IPv6, TCP, UDP, DNS, and TLS) without relying on heavy external C libraries like `libpcap` or `WinPcap`. It parses binary `.pcap` files, reconstructs bidirectional TCP conversation streams, and flags active network attacks in real time.
+`packet-hound` is a lightweight, zero-dependency network analysis engine designed to dissect raw network frames (Ethernet II, 802.1Q VLAN, ARP, IPv4/IPv6, TCP, UDP, DNS, and TLS) without relying on heavy external C libraries like `libpcap` or `WinPcap`. It parses binary `.pcap` files, reconstructs bidirectional TCP conversation streams, and flags active network attacks in real time.
 
 ---
 
