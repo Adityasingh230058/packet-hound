@@ -81,4 +81,5 @@ packet-hound/
 ---
 
 ## 📜 License
-MIT License. Built as Day 1 of the 30-Day Cybersecurity & Cloud Engineering Portfolio.
+
+Distributed under the **MIT License**. See `LICENSE` for more information.
