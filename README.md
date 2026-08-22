@@ -10,13 +10,13 @@ A pure-Python, zero-dependency network packet dissector, 5-tuple flow reconstruc
 
 ---
 
-##  Project Overview
+## Project Overview
 
 `packet-hound` is a lightweight, zero-dependency network analysis engine designed to dissect raw network frames (Ethernet II, 802.1Q VLAN, ARP, IPv4/IPv6, TCP, UDP, DNS, and TLS) without relying on heavy external C libraries like `libpcap` or `WinPcap`. It parses binary `.pcap` files, reconstructs bidirectional TCP conversation streams, and flags active network attacks in real time.
 
 ---
 
-##  Network Anomalies & Threats Detected
+## Network Anomalies & Threats Detected
 
 * **ARP Poisoning & Spoofing**: Identifies conflicting MAC-to-IP associations and gratuitous ARP injection (Man-In-The-Middle attacks).
 * **DNS Tunneling & Data Exfiltration**: Calculates Shannon entropy on domain queries ($H(X) \ge 3.65$) to catch Base32/Hex encoded covert data transfer.
@@ -26,7 +26,7 @@ A pure-Python, zero-dependency network packet dissector, 5-tuple flow reconstruc
 
 ---
 
-##  Quickstart & Testing
+## Quickstart & Testing
 
 ### 1. Clone & Setup
 ```bash
@@ -81,6 +81,6 @@ packet-hound/
 
 ---
 
-##  License
+## License
 
 Distributed under the **MIT License**. See `LICENSE` for more information.
