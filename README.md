@@ -1,4 +1,4 @@
-# 🐶 packet-hound — High-Performance Network Packet Dissector & Threat Detector
+# packet-hound — High-Performance Network Packet Dissector & Threat Detector
 
 [![CI](https://github.com/Adityasingh230058/packet-hound/actions/workflows/ci.yml/badge.svg)](https://github.com/Adityasingh230058/packet-hound/actions/workflows/ci.yml)
 [![Python Version](https://img.shields.io/badge/Python-3.9%20|%203.10%20|%203.11%20|%203.12-brightgreen.svg)](https://www.python.org/)
@@ -10,13 +10,13 @@ A pure-Python, zero-dependency network packet dissector, 5-tuple flow reconstruc
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 `packet-hound` is a lightweight, zero-dependency network analysis engine designed to dissect raw network frames (Ethernet II, 802.1Q VLAN, ARP, IPv4/IPv6, TCP, UDP, DNS, and TLS) without relying on heavy external C libraries like `libpcap` or `WinPcap`. It parses binary `.pcap` files, reconstructs bidirectional TCP conversation streams, and flags active network attacks in real time.
 
 ---
 
-## 🛡️ Network Anomalies & Threats Detected
+##  Network Anomalies & Threats Detected
 
 * **ARP Poisoning & Spoofing**: Identifies conflicting MAC-to-IP associations and gratuitous ARP injection (Man-In-The-Middle attacks).
 * **DNS Tunneling & Data Exfiltration**: Calculates Shannon entropy on domain queries ($H(X) \ge 3.65$) to catch Base32/Hex encoded covert data transfer.
@@ -26,7 +26,7 @@ A pure-Python, zero-dependency network packet dissector, 5-tuple flow reconstruc
 
 ---
 
-## 🚀 Quickstart & Testing
+##  Quickstart & Testing
 
 ### 1. Clone & Setup
 ```bash
@@ -53,7 +53,7 @@ pytest -v tests/
 
 ---
 
-## 📂 Architecture
+## Architecture
 ```text
 packet-hound/
 ├── src/
@@ -81,6 +81,6 @@ packet-hound/
 
 ---
 
-## 📜 License
+##  License
 
 Distributed under the **MIT License**. See `LICENSE` for more information.
